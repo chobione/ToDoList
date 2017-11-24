@@ -5,7 +5,7 @@ use Plenty\Plugin\ServiceProvider;
 use ToDoList\Contracts\ToDoRepositoryContract;
 use ToDoList\Repositories\ToDoRepository;
 
-class ToDoServiceProvider extends serviceProvider
+class ToDoServiceProvider extends ServiceProvider
 {
   public function register()
   {

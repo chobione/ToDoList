@@ -1,7 +1,7 @@
 <?php
 namespace ToDoList\Providers;
 
-use Plenty\Plugin\ToDoRouteServiceProvider;
+use Plenty\Plugin\RouteServiceProvider;
 use Plenty\Plugin\Routing\Router;
 
 class ToDoRouteServiceProvider extends RouteServiceProvider
