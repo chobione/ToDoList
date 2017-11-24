@@ -29,7 +29,7 @@ class ToDoRepository implements ToDoRepositoryContract
     try{
       ToDoValidator::validateOrFail($data);
     } catch (ValidationException $e){
-      throw $e:
+      throw $e;
     }
     $database = pluginApp(DataBase::class);
     $toDo = pluginApp(ToDo::class);

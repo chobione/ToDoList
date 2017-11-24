@@ -6,6 +6,8 @@ use Plenty\Plugin\Http\Request;
 use Plenty\Plugin\Templates\Twig;
 use ToDoList\Contracts\ToDoRepositoryContract;
 
+class ContentController extends Controller
+{
 public function showToDo(Twig $twig, ToDoRepositoryContract $toDoRepo): string
 {
   $toDoList = $toDoRepo->getToDoList();
@@ -30,5 +32,5 @@ public function deleteToDo(int $id, ToDoRepositoryContract $toDoRepo): string
   $deleteToDo = $toDoRepo->deleteTask($id);
   return json_encode($deleteToDo);
 }
-
+}
  ?>
